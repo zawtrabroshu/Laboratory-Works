@@ -4,12 +4,12 @@ using namespace System;
 
 int main(array<System::String^>^ args)
 {
-    Console::WriteLine(L"Лабораторна робота №1");
-    Console::WriteLine(L"Варiант 20");
+    Console::WriteLine(L"Р›Р°Р±РѕСЂР°С‚РѕСЂРЅР° СЂРѕР±РѕС‚Р° в„–1");
+    Console::WriteLine(L"Р’Р°СЂiР°РЅС‚ 20");
     Console::WriteLine(L"========================");
 
-    // Завдання 1
-    Console::WriteLine(L"\nЗАВДАННЯ 1");
+    // Р—Р°РІРґР°РЅРЅСЏ 1
+    Console::WriteLine(L"\nР—РђР’Р”РђРќРќРЇ 1");
 
     double L = 30;
     double W = 25;
@@ -18,62 +18,62 @@ int main(array<System::String^>^ args)
     double area = L * W;
     double price = area * C;
 
-    Console::WriteLine(L"Довжина кiмнати: {0:F2} м", L);
-    Console::WriteLine(L"Ширина кiмнати: {0:F2} м", W);
-    Console::WriteLine(L"Цiна за 1 м2: {0:F2} грн", C);
-    Console::WriteLine(L"Площа кiмнати: {0:F2} м2", area);
-    Console::WriteLine(L"Загальна цiна покриття: {0:F2} грн", price);
+    Console::WriteLine(L"Р”РѕРІР¶РёРЅР° РєiРјРЅР°С‚Рё: {0:F2} Рј", L);
+    Console::WriteLine(L"РЁРёСЂРёРЅР° РєiРјРЅР°С‚Рё: {0:F2} Рј", W);
+    Console::WriteLine(L"Р¦iРЅР° Р·Р° 1 Рј2: {0:F2} РіСЂРЅ", C);
+    Console::WriteLine(L"РџР»РѕС‰Р° РєiРјРЅР°С‚Рё: {0:F2} Рј2", area);
+    Console::WriteLine(L"Р—Р°РіР°Р»СЊРЅР° С†iРЅР° РїРѕРєСЂРёС‚С‚СЏ: {0:F2} РіСЂРЅ", price);
 
 
-    // Завдання 2
-    Console::WriteLine(L"\nЗАВДАННЯ 2");
+    // Р—Р°РІРґР°РЅРЅСЏ 2
+    Console::WriteLine(L"\nР—РђР’Р”РђРќРќРЇ 2");
 
-    Console::Write(L"Введiть перший рядок: ");
+    Console::Write(L"Р’РІРµРґiС‚СЊ РїРµСЂС€РёР№ СЂСЏРґРѕРє: ");
     String^ str1 = Console::ReadLine();
 
-    Console::Write(L"Введiть другий рядок: ");
+    Console::Write(L"Р’РІРµРґiС‚СЊ РґСЂСѓРіРёР№ СЂСЏРґРѕРє: ");
     String^ str2 = Console::ReadLine();
 
     String^ combined = str1 + L" " + str2;
 
-    Console::WriteLine(L"Об'єднаний рядок: {0}", combined);
+    Console::WriteLine(L"РћР±'С”РґРЅР°РЅРёР№ СЂСЏРґРѕРє: {0}", combined);
 
 
-    // Завдання 3
-    Console::WriteLine(L"\nЗАВДАННЯ 3");
+    // Р—Р°РІРґР°РЅРЅСЏ 3
+    Console::WriteLine(L"\nР—РђР’Р”РђРќРќРЇ 3");
 
-    Console::Write(L"Введiть перший рядок: ");
+    Console::Write(L"Р’РІРµРґiС‚СЊ РїРµСЂС€РёР№ СЂСЏРґРѕРє: ");
     String^ compare1 = Console::ReadLine();
 
-    Console::Write(L"Введiть другий рядок: ");
+    Console::Write(L"Р’РІРµРґiС‚СЊ РґСЂСѓРіРёР№ СЂСЏРґРѕРє: ");
     String^ compare2 = Console::ReadLine();
 
     int result = String::Compare(compare1, compare2);
 
     if (result < 0)
-        Console::WriteLine(L"Перший рядок менший за другий.");
+        Console::WriteLine(L"РџРµСЂС€РёР№ СЂСЏРґРѕРє РјРµРЅС€РёР№ Р·Р° РґСЂСѓРіРёР№.");
     else if (result > 0)
-        Console::WriteLine(L"Перший рядок бiльший за другий.");
+        Console::WriteLine(L"РџРµСЂС€РёР№ СЂСЏРґРѕРє Р±iР»СЊС€РёР№ Р·Р° РґСЂСѓРіРёР№.");
     else
-        Console::WriteLine(L"Рядки однаковi.");
+        Console::WriteLine(L"Р СЏРґРєРё РѕРґРЅР°РєРѕРІi.");
 
 
-    // Завдання 4
-    Console::WriteLine(L"\nЗАВДАННЯ 4");
+    // Р—Р°РІРґР°РЅРЅСЏ 4
+    Console::WriteLine(L"\nР—РђР’Р”РђРќРќРЇ 4");
 
-    Console::Write(L"Введiть рядок: ");
+    Console::Write(L"Р’РІРµРґiС‚СЊ СЂСЏРґРѕРє: ");
     String^ original = Console::ReadLine();
 
     String^ newString = L"begin " + original + L" end";
 
-    Console::WriteLine(L"Новий рядок: {0}", newString);
-    Console::WriteLine(L"Довжина нового рядка: {0}", newString->Length);
+    Console::WriteLine(L"РќРѕРІРёР№ СЂСЏРґРѕРє: {0}", newString);
+    Console::WriteLine(L"Р”РѕРІР¶РёРЅР° РЅРѕРІРѕРіРѕ СЂСЏРґРєР°: {0}", newString->Length);
 
 
-    // Завдання 5
-    Console::WriteLine(L"\nЗАВДАННЯ 5");
+    // Р—Р°РІРґР°РЅРЅСЏ 5
+    Console::WriteLine(L"\nР—РђР’Р”РђРќРќРЇ 5");
 
-    Console::Write(L"Введiть рядок: ");
+    Console::Write(L"Р’РІРµРґiС‚СЊ СЂСЏРґРѕРє: ");
     String^ reverseString = Console::ReadLine();
 
     String^ reversed = L"";
@@ -83,27 +83,27 @@ int main(array<System::String^>^ args)
         reversed += reverseString[i];
     }
 
-    Console::WriteLine(L"Рядок у зворотному порядку: {0}", reversed);
+    Console::WriteLine(L"Р СЏРґРѕРє Сѓ Р·РІРѕСЂРѕС‚РЅРѕРјСѓ РїРѕСЂСЏРґРєСѓ: {0}", reversed);
 
 
-    // Завдання 6
-    Console::WriteLine(L"\nЗАВДАННЯ 6");
+    // Р—Р°РІРґР°РЅРЅСЏ 6
+    Console::WriteLine(L"\nР—РђР’Р”РђРќРќРЇ 6");
 
-    Console::Write(L"Введiть перший рядок: ");
+    Console::Write(L"Р’РІРµРґiС‚СЊ РїРµСЂС€РёР№ СЂСЏРґРѕРє: ");
     String^ line1 = Console::ReadLine();
 
-    Console::Write(L"Введiть другий рядок: ");
+    Console::Write(L"Р’РІРµРґiС‚СЊ РґСЂСѓРіРёР№ СЂСЏРґРѕРє: ");
     String^ line2 = Console::ReadLine();
 
     if (line1->Length > line2->Length)
-        Console::WriteLine(L"Перший рядок довший.");
+        Console::WriteLine(L"РџРµСЂС€РёР№ СЂСЏРґРѕРє РґРѕРІС€РёР№.");
     else if (line1->Length < line2->Length)
-        Console::WriteLine(L"Другий рядок довший.");
+        Console::WriteLine(L"Р”СЂСѓРіРёР№ СЂСЏРґРѕРє РґРѕРІС€РёР№.");
     else
-        Console::WriteLine(L"Рядки мають однакову довжину.");
+        Console::WriteLine(L"Р СЏРґРєРё РјР°СЋС‚СЊ РѕРґРЅР°РєРѕРІСѓ РґРѕРІР¶РёРЅСѓ.");
 
     Console::WriteLine(L"\n========================");
-    Console::WriteLine(L"Роботу завершено!");
+    Console::WriteLine(L"Р РѕР±РѕС‚Сѓ Р·Р°РІРµСЂС€РµРЅРѕ!");
 
     return 0;
 }
